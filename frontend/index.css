@@ -1,0 +1,81 @@
+import React from 'react';
+
+export const Terms = () => {
+  return (
+    <div className="min-h-screen bg-white" data-testid="terms-page">
+      <div className="bg-[#FAF7F2] border-b border-neutral-200 py-12">
+        <div className="px-6 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <div className="text-xs font-bold uppercase tracking-widest text-[#6B0F1A] mb-3">Legal</div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-neutral-900" data-testid="terms-heading">
+            Terms & Conditions
+          </h1>
+        </div>
+      </div>
+
+      <div className="px-6 md:px-12 lg:px-16 max-w-4xl mx-auto py-12">
+        <p className="text-neutral-600 mb-8 leading-relaxed">
+          Please read all Terms & Conditions carefully to avoid any misunderstandings or disputes in the future. 
+          If there is anything you do not understand, please ask before making payment. Once the booking payment 
+          has been made, the customer is deemed to have understood and agreed to all Terms & Conditions.
+        </p>
+
+        <div className="space-y-8">
+          <section>
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">Reservation & Deposit</h2>
+            <p className="text-neutral-700 leading-relaxed">
+              A booking payment of 50% of the rental fee is required to lock in the rental date. 
+              Reservations will only be confirmed after payment is received.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">Late Return Charges</h2>
+            <p className="text-neutral-700 leading-relaxed">
+              A late return fee of <span className="font-bold text-[#6B0F1A]">RM5 per hour</span> will be charged for equipment returned beyond the agreed rental period.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">Equipment Care & Damage</h2>
+            <div className="text-neutral-700 leading-relaxed space-y-2">
+              <p>Customers are fully responsible for the rented equipment throughout the rental period.</p>
+              <p>Any damage, loss, malfunction, or negligence resulting in repair costs will be charged accordingly.</p>
+              <p>Minor damage may result in deductions from the security deposit.</p>
+              <p>Additional penalties may be imposed for significant damage, with liability up to <span className="font-bold text-[#6B0F1A]">RM1,800</span> depending on the severity of the damage.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">Identity Verification</h2>
+            <p className="text-neutral-700 mb-3">For security purposes, customers are required to provide:</p>
+            <ul className="list-disc list-inside text-neutral-700 space-y-1 mb-3">
+              <li>Valid IC</li>
+              <li>Active social media account</li>
+              <li>Emergency contact number (family member or guardian)</li>
+            </ul>
+            <p className="text-neutral-700">Failure to provide sufficient verification documents may result in booking rejection.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">Collection & Return</h2>
+            <div className="text-neutral-700 leading-relaxed space-y-2">
+              <p>Self-pickup and COD services are available.</p>
+              <p>A rental agreement must be signed during equipment collection.</p>
+              <p>The equipment must be returned in the same condition as received.</p>
+            </div>
+          </section>
+
+          <section className="bg-[#FAF7F2] border border-neutral-200 p-6">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">Customer Declaration</h2>
+            <p className="text-neutral-700 leading-relaxed italic">
+              "I confirm that all information provided is accurate and complete. I have read, understood, 
+              and agreed to all Terms & Conditions stated by kamera.kch. I understand that failure to comply 
+              with the rental agreement may result in penalties, deposit deductions, or compensation charges 
+              where applicable."
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+};
